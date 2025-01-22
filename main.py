@@ -1,5 +1,7 @@
 import random
 import string
+from tkinter import PhotoImage
+
 import pyperclip
 import customtkinter as ctk
 
@@ -52,6 +54,8 @@ ctk.set_default_color_theme("blue")
 app = ctk.CTk()
 app.title("Password Generator")
 app.geometry("500x500")
+icon= PhotoImage("img.png")
+app.iconphoto(True, icon)
 
 length_label = ctk.CTkLabel(app, text="Password Length:")
 length_label.pack(pady=(20, 5))
